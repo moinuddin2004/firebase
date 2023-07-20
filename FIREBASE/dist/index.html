@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIREBASE</title>
+    <style>
+        #bookDisplayGrid {
+            display: flex;
+            gap: 1em;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        #bookDisplayGrid .bookTile {
+            border: 1px solid black;
+            padding: 1em;
+            border-radius: 0.5rem;
+            min-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>started</h1>
+    <form id="bookAddForm">
+        <label for="bookName"> Book Name: </label>
+        <input type="text" id="bookName">
+        <br>
+        <label for="bookAuthor"> Book Author Name: </label>
+        <input type="text" id="bookAuthor">
+
+        <br>
+        <label for="bookGenre"> Book Genre: </label>
+        <input type="text" id="bookGenre">
+
+        <br>
+        <button type="submit" id="add">Add Book to Database</button>
+    </form>
+
+ <form >
+        <label for="inp">delete</label>
+        <input type="text"  id="inp" required>
+
+        <button id="del">delete</button>
+    </form>
+
+    <div id="bookDisplayGrid">
+        <!-- <div class="bookTile">
+            <h3>Book Name</h3>
+            <p>book Author - book Genre </p>
+        </div>
+        <div class="bookTile">
+            <h3>Book Name</h3>
+            <p>book Author - book Genre </p>
+        </div>
+        <div class="bookTile">
+            <h3>Book Name</h3>
+            <p>book Author - book Genre </p>
+        </div> -->
+    </div>
+
+  
+    <script type="module" src="../src/app.js"></script>
+</body>
+</html>

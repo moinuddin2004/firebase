@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIRESTORE</title>
+    <style>/* CSS code to style the book cards using flexbox */
+
+        /* Card Container */
+        #bookdisplay {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+        
+        /* Individual Card */
+        .classtitle {
+          flex: 1;
+          max-width: 300px;
+          border: 1px solid #ccc;
+          border-radius: 8px;
+          padding: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .classtitle h3 {
+          font-size: 18px;
+          margin: 0;
+        }
+        
+        .classtitle p {
+          margin: 5px 0;
+        }
+
+        .classtitle p {
+  margin: 5px 0;
+}
+
+/* Document ID on the right */
+.classtitle p.doc-id {
+  font-size: 12px;
+  color: #777;
+}
+        
+        /* Optional Styling for Better Presentation */
+        body {
+          font-family: Arial, sans-serif;
+          margin: 20px;
+          background-color: #ebdd75;
+        }
+        </style>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Add Book to Database</legend>
+        <form id="bookAddForm">
+            <label for="bookName">Book Name:</label>
+            <input type="text" id="bookName" placeholder="Enter book name">
+            <br>
+
+            <label for="bookAuthor">Book Author Name:</label>
+            <input type="text" id="bookAuthor" placeholder="Enter author name">
+            <br>
+
+            <label for="bookGenre">Book Genre:</label>
+            <input type="text" id="bookGenre" placeholder="Enter book genre">
+            <br>
+
+            <label for="key">Key:</label>
+            <input type="text" id="key" placeholder="Enter a unique key">
+            <br>
+
+            <button type="submit">Add Book to Database</button>
+        </form>
+    </fieldset>
+
+    <fieldset>
+        <legend>Delete Book from Database</legend>
+        <form id="bookdeleteForm">
+            <label for="keyd">Enter the key of the book to delete:</label>
+            <input type="text" id="keyd" placeholder="Enter key to delete">
+            <br>
+
+            <button type="submit">Delete Book</button>
+        </form>
+    </fieldset>
+
+    <div id="bookdisplay">
+        <!-- This is where the fetched books' data will be displayed -->
+      </div>
+      
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
